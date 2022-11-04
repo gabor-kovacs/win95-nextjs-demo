@@ -1,6 +1,8 @@
 ## frontend-next.js-task
 
-Deployed to [Vercel](https://win95-nextjs-demo.vercel.app/).
+Run `yarn dev`
+
+Do not build as there is no actual backend
 
 ## Use these very secret keys in .env
 
