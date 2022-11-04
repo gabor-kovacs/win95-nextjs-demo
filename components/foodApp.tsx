@@ -52,7 +52,9 @@ const FoodApp: React.FC<Props> = ({ inactive }) => {
 
   const handleDeleteFood = async (_: React.MouseEvent<HTMLButtonElement, MouseEvent>, id: string) => {
     try {
-      const response = await axios.delete(`/api/food/${id}`);
+      const response = await axios.delete(`/api/food/${id}`, {
+        headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+      });
       forceRefresh(uuidv4());
     } catch (error) {
       console.log(error);

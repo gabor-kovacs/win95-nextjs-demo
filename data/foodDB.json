@@ -1,26 +1,30 @@
 [
-    {
-        "name": "Cake",
-        "details": {
-            "flour": {
-                "unit": "kg",
-                "amount": 1
-            }
-        },
-        "id": "a148da56-607f-45dc-a6aa-9f2184cff18a",
-        "slug": "cake",
-        "createdAt": "2022-11-03T10:12:15.111Z"
-    },
-    {
-        "name": "Some other food",
-        "slug": "some_other_food",
-        "id": "d0699a2c-a644-45d3-98d0-79b0f8a9e4eb",
-        "createdAt": "2022-11-03T10:12:15.551Z",
-        "details": {
-            "paprika": {
-                "unit": "g",
-                "amount": 200
-            }
-        }
+  {
+    "name": "Cake",
+    "slug": "cake",
+    "id": "a148da56-607f-45dc-a6aa-9f2184cff18a",
+    "createdAt": "2022-11-03T10:12:15.111Z",
+    "details": {
+      "flour": {
+        "unit": "kg",
+        "amount": 1
+      },
+      "milk": {
+        "unit": "l",
+        "amount": 2
+      }
     }
+  },
+  {
+    "name": "Some other food",
+    "slug": "some_other_food",
+    "id": "d0699a2c-a644-45d3-98d0-79b0f8a9e4eb",
+    "createdAt": "2022-11-03T10:12:15.551Z",
+    "details": {
+      "paprika": {
+        "unit": "g",
+        "amount": 200
+      }
+    }
+  }
 ]

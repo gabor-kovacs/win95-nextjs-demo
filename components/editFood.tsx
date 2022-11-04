@@ -68,7 +68,9 @@ const EditFood: React.FC<Props> = (props) => {
     }
     const updatedFood = { name, details, id: food.id, slug: generateSlug(name), createdAt: food.createdAt };
     try {
-      const response = await axios.put(`/api/food/${food.id}`, updatedFood);
+      const response = await axios.put(`/api/food/${food.id}`, updatedFood, {
+        headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+      });
       setInfo("");
       setEditDialogOpen(false);
       router.push("/food");

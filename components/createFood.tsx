@@ -61,7 +61,9 @@ const CreateFood: React.FC<Props> = (props) => {
     }
     const newFood = { name, details };
     try {
-      const response = await axios.post("/api/food", newFood);
+      const response = await axios.post("/api/food", newFood, {
+        headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+      });
       setInfo("");
       setCreateDialogOpen(false);
       router.push("/food");
